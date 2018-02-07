@@ -1,6 +1,6 @@
 class Pals
   def initialize(input)
-    @input = input.to_s
+    @input = input.to_s.downcase.gsub(/[[:punct:]]/, '')
   end
 
   # def to_letters

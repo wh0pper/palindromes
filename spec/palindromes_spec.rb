@@ -24,6 +24,11 @@ describe ('#is_pal') do
     expect(text.is_pal?()).to(eq(true))
   end
 
+  it "tests for phrases with punctuation" do
+    text = Pals.new('a but tuba.')
+    expect(text.is_pal?()).to(eq(true))
+  end
+
   it "tests for integer palindromes" do
     text = Pals.new(12321)
     expect(text.is_pal?()).to(eq(true))
