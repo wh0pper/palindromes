@@ -19,8 +19,8 @@ describe ('#is_pal') do
     expect(text.is_pal?()).to(eq(true))
   end
 
-  it "tests for single multi word palindromes" do
-    text = Pals.new('lonely tylenol')
+  it "tests for single multi word palindromes with capitalization" do
+    text = Pals.new('Lonely tylenol')
     expect(text.is_pal?()).to(eq(true))
   end
 

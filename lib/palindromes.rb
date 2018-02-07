@@ -1,11 +1,7 @@
 class Pals
   def initialize(input)
-    @input = input.to_s
+    @input = input.to_s.downcase
   end
-
-  # def to_letters
-  #   @input.split(%r{\s*})
-  # end
 
   def is_pal?
     letters = @input.split(%r{\s*})
