@@ -1,4 +1,9 @@
+racecar
+1234321
+palindromes
+garbage
 A but tuba.
+not a palindrome
 A car, a man, a maraca.
 A dog, a plan, a canal: pagoda.
 A dog! A panic in a pagoda!
