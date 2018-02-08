@@ -25,7 +25,7 @@ class Pals
   end
 
   def is_pal?(text)
-    letters = text.split(%r{\s*})
+    letters = text.to_s.downcase.gsub(/[[:punct:]]/, '').split(%r{\s*})
     rev_index = letters.length-1
     index = 0
     while index < (letters.length/2)
